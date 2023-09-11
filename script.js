@@ -1,2 +1,2 @@
-const { add, subtract, multiply, divide } = require('./functions');
+const { add, subtract, multiply, divide, operate } = require('./functions');
 
