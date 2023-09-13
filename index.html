@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <h1>Just A Basic Calculator</h1>
   <div class="container">
-    <div class="display">1 + 2 = <br><br><b class="result">3</b></div>
+    <div class="display">
+      <div class="display-calculation"></div>
+      <br>
+      <div id="result"></div>
+    </div>
     <div class="buttons">
       <button class="all-clear">AC</button>
       <button class="parentheses">( )</button>
@@ -29,7 +33,7 @@
       <button>3</button>
       <button class="add">＋</button>
       <button>0</button>
-      <button>・</button>
+      <button>.</button>
       <button>⌫</button>
       <button class="equal">=</button>
     </div>

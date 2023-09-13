@@ -28,7 +28,7 @@ body {
   padding: 1em;
 }
 
-.result {
+#result {
   font-size: 30px;
 }
 
