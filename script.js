@@ -1,36 +1,36 @@
-const add = (num1, num2) => {
-  return num1 + num2;
+const add = (x, y) => {
+  return x + y;
 };
 
-const subtract = (num1, num2) => {
-  return num1 - num2;
+const subtract = (x, y) => {
+  return x - y;
 };
 
-const multiply = (num1, num2) => {
-  return num1 * num2;
+const multiply = (x, y) => {
+  return x * y;
 };
 
-const divide = (num1, num2) => {
-  if (num2 === 0) {
+const divide = (x, y) => {
+  if (y === 0) {
     return "Cannot divide by 0";
   }
-  return num1 / num2;
+  return x / y;
 };
 
 const firstNumber = 2;
 const secondNumber = 4;
 const operator = '+';
 
-const operate = (operator, num1, num2) => {
+const operate = (operator, x, y) => {
   switch (operator) {
     case '＋':
-      return add(num1, num2);
+      return add(x, y);
     case '−':
-      return subtract(num1, num2);
+      return subtract(x, y);
     case '×':
-      return multiply(num1, num2);
+      return multiply(x, y);
     case '÷':
-      return divide(num1, num2);
+      return divide(x, y);
     default:
       return 'Invalid operator';
   }
@@ -57,12 +57,12 @@ const handleClick = (button) => {
 
     const numbers = displayValue.split(/[^A-Z0-9]+/ig);
     const operator = displayValue.slice(1, 2);
-    const num1 = Number.parseInt(numbers[0]);
-    const num2 = Number.parseInt(numbers[1]);
+    const x = Number.parseInt(numbers[0]);
+    const y = Number.parseInt(numbers[1]);
 
     let resultValue = document.querySelector('#result');
 
-    const result = operate(operator, num1, num2);
+    const result = operate(operator, x, y);
 
     if (resultValue) {
       console.log(resultValue);

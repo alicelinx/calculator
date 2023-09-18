@@ -52,10 +52,7 @@ button {
 
 .parentheses,
 .percentage,
-.divide,
-.multiply,
-.subtract,
-.add,
+.operators,
 .equal {
   background-color: rgb(210, 226, 239);
 }
