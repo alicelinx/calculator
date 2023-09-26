@@ -2,7 +2,7 @@
 
 A basic calculator built with HTML, CSS and vanilla JS.
 
-➤ [Live Demo](https://alicelinx.github.io/etch-a-sketch/)
+➤ [Live Demo](https://alicelinx.github.io/calculator/)
 
 - Final Product
 
